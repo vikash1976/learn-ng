@@ -1,0 +1,18 @@
+<div class="row">
+<div class="col col-xs-3">
+    <p (click)="clickServer()" [ngStyle]="{'font-size': sizeOfFont + 'px'}"> {{ server.name }}</p>
+    <!--<p (click)="clickServer()" style="font-size: 40px;"> {{ server.name }}</p>-->
+
+
+</div>
+<div class="col col-xs-4">
+    <span class="label label-info" *ngIf="!editable" (click)="editable = !editable">Health: {{ server.remarks }} - click to edit</span>
+    <input class="form-control" *ngIf="editable" type="text" [(ngModel)]="server.remarks" (blur)="editable = !editable">
+</div>
+<div class="col col-xs-3">
+    <p (click)="clickServer()"> {{ server.state }}</p>
+</div>
+<div class="col col-xs-2">
+    <button class="btn btn-primary btn-xs" (click)="onSwitch()">Switch</button>
+</div>
+</div>

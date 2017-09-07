@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offest-1 col-md-offset-2">
+      <h4>Custom Multiplier Pipe in action - </h4>
+      <p>15 multiped by 3 is: {{ 15 | multiplier:3:9:0 }}</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offest-1 col-md-offset-2">
+      <input type="text" [(ngModel)]="filterOnField" placeholder="Search on">
+      <input type="text" [(ngModel)]="filterCriteria" placeholder="Search for">
+      <ul class="list-group">
+        <li class="list-group-item"
+        *ngFor="let server of myServers | filterServers: filterCriteria: filterOnField"
+        [ngClass]="getClassPerServerStatus(server)">
+        <span class="badge">
+          {{server.status}}
+        </span>
+        <strong>{{server.name}}</strong> | {{server.instanceType | uppercase}} | 
+        {{server.startedOn | date:'medium'}} | 
+        {{server.cost | number:'.2-3' | currency:'USD':true}}
+        </li>
+      </ul>
+      <br/><br/>
+      <button class="btn btn-priamry" (click)="fetchPerson()">Fetch Person</button>
+      <div *ngIf="readyToLoadPerson">
+      <div *ngIf="person$ | async as person11; else loadingPerson">
+        Name: {{person11.name}}<br>
+        Twitter: {{person11.twitter}}
+      </div>
+      
+        
+      <!--Name: {{(person$ | async)?.name}}<br>
+      Twitter: {{(person$ | async)?.twitter}}
+      Website: {{(person$ | async)?.website}}-->
+           <ng-template #loadingPerson>
+        Loading Person ...
+      </ng-template>
+    <!--This is person as non observable: {{person.name}}-->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,431 @@
+{
+    "pluginId": "processingCalendar",
+    "name": "CalTestVik",
+    "events": [
+        {
+            "start": 1503914880000,
+            "end": 1503918480000,
+            "title": "One Time Event",
+            "id": "bbf0254e-69b0-414b-8c73-43037bad3a7a",
+            "allDay": false,
+            "description": "",
+            "scheduling": {
+                "recurrenceInterval": "none",
+                "showRecurrenceOption": true,
+                "executionTime": "03:38 PM Asia/Kolkata",
+                "startTimeStamp": 1503914880000,
+                "endTimeStamp": 1503918480000,
+                "showEndDateOption": false,
+                "endDateOptional": false,
+                "noEndDate": false,
+                "showAllDayOption": false,
+                "allDay": false,
+                "recurringEvent": false,
+                "active": true,
+                "recurrenceRange": {
+                    "endDate": "2017-08-28",
+                    "startDate": "2017-08-28",
+                    "occurences": 1,
+                    "endMode": "noEnd"
+                },
+                "dailyRecurrenceOptions": {
+                    "daysRecurrence": "interval",
+                    "daysIntervalCount": 1
+                },
+                "weeklyRecurrenceOptions": {
+                    "recurrenceWeekCount": 1,
+                    "mondays": false,
+                    "tuesdays": true,
+                    "wednesdays": false,
+                    "thursdays": true,
+                    "fridays": false,
+                    "saturdays": false,
+                    "sundays": false
+                },
+                "monthlyRecurrenceOptions": {
+                    "monthsRecurrence": "day",
+                    "dayNumber": 15,
+                    "month": 2,
+                    "day": 2,
+                    "dayIndex": 1,
+                    "monthIndex": 1
+                },
+                "yearlyRecurrenceOptions": {
+                    "yearlyRecurrence": "weekday",
+                    "recurEveryYear": 1,
+                    "onMonth": 11,
+                    "onDay": 3,
+                    "onTheXDay": 2,
+                    "onTheXDayName": 3,
+                    "onTheMonth": 11
+                },
+                "showDueDate": true
+            },
+            "eventDetails": {
+                "businessDateOffset": 0,
+                "dueDate": 1503914880000,
+                "benchmarkDefinitionId": "dd364af7-0f57-4996-b836-b4d83f434143",
+                "relationship": {},
+                "processDefinitionId": "{NewSimpleModel1424}testing",
+                "fallbackDate": "IGNORE"
+            },
+            "type": "processStart"
+        }
+    ],
+    "recurringEvents": [
+        {
+            "start": 1503312480000,
+            "end": 1503316080000,
+            "title": "New Event Rec1",
+            "id": "10e2b29c-d6b3-4460-976f-a0287b21fdf6",
+            "allDay": false,
+            "description": "",
+            "scheduling": {
+                "recurrenceInterval": "daily",
+                "showRecurrenceOption": true,
+                "executionTime": "04:18 PM Asia/Kolkata",
+                "startTimeStamp": 1503312480000,
+                "endTimeStamp": 1503316080000,
+                "showEndDateOption": false,
+                "endDateOptional": false,
+                "noEndDate": false,
+                "showAllDayOption": false,
+                "allDay": false,
+                "recurringEvent": true,
+                "active": true,
+                "recurrenceRange": {
+                    "endDate": "2017-09-30",
+                    "startDate": "2017-08-21",
+                    "occurences": 1,
+                    "endMode": "noEnd"
+                },
+                "dailyRecurrenceOptions": {
+                    "daysRecurrence": "interval",
+                    "daysIntervalCount": 1
+                },
+                "weeklyRecurrenceOptions": {
+                    "recurrenceWeekCount": 1,
+                    "mondays": false,
+                    "tuesdays": true,
+                    "wednesdays": false,
+                    "thursdays": true,
+                    "fridays": false,
+                    "saturdays": false,
+                    "sundays": false
+                },
+                "monthlyRecurrenceOptions": {
+                    "monthsRecurrence": "day",
+                    "dayNumber": 15,
+                    "month": 2,
+                    "day": 2,
+                    "dayIndex": 1,
+                    "monthIndex": 1
+                },
+                "yearlyRecurrenceOptions": {
+                    "yearlyRecurrence": "weekday",
+                    "recurEveryYear": 1,
+                    "onMonth": 11,
+                    "onDay": 3,
+                    "onTheXDay": 2,
+                    "onTheXDayName": 3,
+                    "onTheMonth": 11
+                },
+                "showDueDate": true
+            },
+            "eventDetails": {
+                "businessDateOffset": 0,
+                "dueDate": null,
+                "benchmarkDefinitionId": "dd364af7-0f57-4996-b836-b4d83f434143",
+                "relationship": {},
+                "processDefinitionId": "{NewSimpleModel522}VW_31",
+                "fallbackDate": "IGNORE"
+            },
+            "type": "processStart"
+        }
+    ],
+    "importedCalendars": [],
+    "businessObjectInstance": {
+        "businessObjectId": "{CCCore}Entity",
+        "primaryKey": "CalTestVik"
+    },
+    "path": "/business-calendars/processingCalendar/CCCore/Entity/CalTestVik.json",
+    "importedEvents": [],
+    "calculatedRecurringEvents": [
+        {
+            "start": 1504176480000,
+            "end": 1504180080000,
+            "title": "New Event Rec1",
+            "id": "10e2b29c-d6b3-4460-976f-a0287b21fdf6",
+            "allDay": false,
+            "description": "",
+            "scheduling": {
+                "recurrenceInterval": "daily",
+                "showRecurrenceOption": true,
+                "executionTime": "04:18 PM Asia/Kolkata",
+                "startTimeStamp": 1504176480000,
+                "endTimeStamp": 1504180080000,
+                "showEndDateOption": false,
+                "endDateOptional": false,
+                "noEndDate": false,
+                "showAllDayOption": false,
+                "allDay": false,
+                "recurringEvent": true,
+                "active": true,
+                "recurrenceRange": {
+                    "endDate": "2017-09-30",
+                    "startDate": "2017-08-21",
+                    "occurences": 1,
+                    "endMode": "noEnd"
+                },
+                "dailyRecurrenceOptions": {
+                    "daysRecurrence": "interval",
+                    "daysIntervalCount": 1
+                },
+                "weeklyRecurrenceOptions": {
+                    "recurrenceWeekCount": 1,
+                    "mondays": false,
+                    "tuesdays": true,
+                    "wednesdays": false,
+                    "thursdays": true,
+                    "fridays": false,
+                    "saturdays": false,
+                    "sundays": false
+                },
+                "monthlyRecurrenceOptions": {
+                    "monthsRecurrence": "day",
+                    "dayNumber": 15,
+                    "month": 2,
+                    "day": 2,
+                    "dayIndex": 1,
+                    "monthIndex": 1
+                },
+                "yearlyRecurrenceOptions": {
+                    "yearlyRecurrence": "weekday",
+                    "recurEveryYear": 1,
+                    "onMonth": 11,
+                    "onDay": 3,
+                    "onTheXDay": 2,
+                    "onTheXDayName": 3,
+                    "onTheMonth": 11
+                },
+                "showDueDate": true
+            },
+            "eventDetails": {
+                "businessDateOffset": 0,
+                "dueDate": null,
+                "benchmarkDefinitionId": "dd364af7-0f57-4996-b836-b4d83f434143",
+                "relationship": {},
+                "processDefinitionId": "{NewSimpleModel522}VW_31",
+                "fallbackDate": "IGNORE"
+            },
+            "type": "processStart"
+        },
+        {
+            "start": 1504262880000,
+            "end": 1504266480000,
+            "title": "New Event Rec1",
+            "id": "10e2b29c-d6b3-4460-976f-a0287b21fdf6",
+            "allDay": false,
+            "description": "",
+            "scheduling": {
+                "recurrenceInterval": "daily",
+                "showRecurrenceOption": true,
+                "executionTime": "04:18 PM Asia/Kolkata",
+                "startTimeStamp": 1504262880000,
+                "endTimeStamp": 1504266480000,
+                "showEndDateOption": false,
+                "endDateOptional": false,
+                "noEndDate": false,
+                "showAllDayOption": false,
+                "allDay": false,
+                "recurringEvent": true,
+                "active": true,
+                "recurrenceRange": {
+                    "endDate": "2017-09-30",
+                    "startDate": "2017-08-21",
+                    "occurences": 1,
+                    "endMode": "noEnd"
+                },
+                "dailyRecurrenceOptions": {
+                    "daysRecurrence": "interval",
+                    "daysIntervalCount": 1
+                },
+                "weeklyRecurrenceOptions": {
+                    "recurrenceWeekCount": 1,
+                    "mondays": false,
+                    "tuesdays": true,
+                    "wednesdays": false,
+                    "thursdays": true,
+                    "fridays": false,
+                    "saturdays": false,
+                    "sundays": false
+                },
+                "monthlyRecurrenceOptions": {
+                    "monthsRecurrence": "day",
+                    "dayNumber": 15,
+                    "month": 2,
+                    "day": 2,
+                    "dayIndex": 1,
+                    "monthIndex": 1
+                },
+                "yearlyRecurrenceOptions": {
+                    "yearlyRecurrence": "weekday",
+                    "recurEveryYear": 1,
+                    "onMonth": 11,
+                    "onDay": 3,
+                    "onTheXDay": 2,
+                    "onTheXDayName": 3,
+                    "onTheMonth": 11
+                },
+                "showDueDate": true
+            },
+            "eventDetails": {
+                "businessDateOffset": 0,
+                "dueDate": null,
+                "benchmarkDefinitionId": "dd364af7-0f57-4996-b836-b4d83f434143",
+                "relationship": {},
+                "processDefinitionId": "{NewSimpleModel522}VW_31",
+                "fallbackDate": "IGNORE"
+            },
+            "type": "processStart"
+        },
+        {
+            "start": 1504349280000,
+            "end": 1504352880000,
+            "title": "New Event Rec1",
+            "id": "10e2b29c-d6b3-4460-976f-a0287b21fdf6",
+            "allDay": false,
+            "description": "",
+            "scheduling": {
+                "recurrenceInterval": "daily",
+                "showRecurrenceOption": true,
+                "executionTime": "04:18 PM Asia/Kolkata",
+                "startTimeStamp": 1504349280000,
+                "endTimeStamp": 1504352880000,
+                "showEndDateOption": false,
+                "endDateOptional": false,
+                "noEndDate": false,
+                "showAllDayOption": false,
+                "allDay": false,
+                "recurringEvent": true,
+                "active": true,
+                "recurrenceRange": {
+                    "endDate": "2017-09-30",
+                    "startDate": "2017-08-21",
+                    "occurences": 1,
+                    "endMode": "noEnd"
+                },
+                "dailyRecurrenceOptions": {
+                    "daysRecurrence": "interval",
+                    "daysIntervalCount": 1
+                },
+                "weeklyRecurrenceOptions": {
+                    "recurrenceWeekCount": 1,
+                    "mondays": false,
+                    "tuesdays": true,
+                    "wednesdays": false,
+                    "thursdays": true,
+                    "fridays": false,
+                    "saturdays": false,
+                    "sundays": false
+                },
+                "monthlyRecurrenceOptions": {
+                    "monthsRecurrence": "day",
+                    "dayNumber": 15,
+                    "month": 2,
+                    "day": 2,
+                    "dayIndex": 1,
+                    "monthIndex": 1
+                },
+                "yearlyRecurrenceOptions": {
+                    "yearlyRecurrence": "weekday",
+                    "recurEveryYear": 1,
+                    "onMonth": 11,
+                    "onDay": 3,
+                    "onTheXDay": 2,
+                    "onTheXDayName": 3,
+                    "onTheMonth": 11
+                },
+                "showDueDate": true
+            },
+            "eventDetails": {
+                "businessDateOffset": 0,
+                "dueDate": null,
+                "benchmarkDefinitionId": "dd364af7-0f57-4996-b836-b4d83f434143",
+                "relationship": {},
+                "processDefinitionId": "{NewSimpleModel522}VW_31",
+                "fallbackDate": "IGNORE"
+            },
+            "type": "processStart"
+        },
+        {
+            "start": 1504435680000,
+            "end": 1504439280000,
+            "title": "New Event Rec1",
+            "id": "10e2b29c-d6b3-4460-976f-a0287b21fdf6",
+            "allDay": false,
+            "description": "",
+            "scheduling": {
+                "recurrenceInterval": "daily",
+                "showRecurrenceOption": true,
+                "executionTime": "04:18 PM Asia/Kolkata",
+                "startTimeStamp": 1504435680000,
+                "endTimeStamp": 1504439280000,
+                "showEndDateOption": false,
+                "endDateOptional": false,
+                "noEndDate": false,
+                "showAllDayOption": false,
+                "allDay": false,
+                "recurringEvent": true,
+                "active": true,
+                "recurrenceRange": {
+                    "endDate": "2017-09-30",
+                    "startDate": "2017-08-21",
+                    "occurences": 1,
+                    "endMode": "noEnd"
+                },
+                "dailyRecurrenceOptions": {
+                    "daysRecurrence": "interval",
+                    "daysIntervalCount": 1
+                },
+                "weeklyRecurrenceOptions": {
+                    "recurrenceWeekCount": 1,
+                    "mondays": false,
+                    "tuesdays": true,
+                    "wednesdays": false,
+                    "thursdays": true,
+                    "fridays": false,
+                    "saturdays": false,
+                    "sundays": false
+                },
+                "monthlyRecurrenceOptions": {
+                    "monthsRecurrence": "day",
+                    "dayNumber": 15,
+                    "month": 2,
+                    "day": 2,
+                    "dayIndex": 1,
+                    "monthIndex": 1
+                },
+                "yearlyRecurrenceOptions": {
+                    "yearlyRecurrence": "weekday",
+                    "recurEveryYear": 1,
+                    "onMonth": 11,
+                    "onDay": 3,
+                    "onTheXDay": 2,
+                    "onTheXDayName": 3,
+                    "onTheMonth": 11
+                },
+                "showDueDate": true
+            },
+            "eventDetails": {
+                "businessDateOffset": 0,
+                "dueDate": null,
+                "benchmarkDefinitionId": "dd364af7-0f57-4996-b836-b4d83f434143",
+                "relationship": {},
+                "processDefinitionId": "{NewSimpleModel522}VW_31",
+                "fallbackDate": "IGNORE"
+            },
+            "type": "processStart"
+        }
+    ]
+}

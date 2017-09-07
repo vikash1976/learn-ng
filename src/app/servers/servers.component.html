@@ -1,0 +1,29 @@
+<p>
+  Servers Details
+</p>
+<!--<div app-server [server]="{'name': 'Production', 'state': 'Online', 'remarks': 'Bad'}" (server-clicked)="serverEvent($event)"></div>
+<div app-server [server]="{'name': 'Test', 'state': 'Online', 'remarks': 'Good'}"></div>
+<div app-server [server]="{'name': 'Development', 'state': 'Offline', 'remarks': 'Bad'}"></div>-->
+
+<div class="row">
+  <app-server *ngFor="let server of servers" [server-data]=server (server-clicked)="serverEvent($event)">
+  </app-server>
+</div>
+
+
+<!--<div class="navbar navbar-default navbar-fixed-bottom" >
+  <div class="container" *ngIf="gitDetails$ | async as gitDetails ">
+    
+    <div class="row">
+      <div class="col-md-4">
+        {{gitDetails.login}}
+      </div>
+      <div class="col-md-4">
+        {{gitDetails.company}}
+      </div>
+      <div class="col-md-4 text-right">
+        {{gitDetails.location}}
+      </div>
+    </div>
+  </div>
+</div>-->

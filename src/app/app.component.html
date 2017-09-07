@@ -1,0 +1,98 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>
+        {{AppTitle}}
+      </h1>
+      <hr>
+      <!--<app-servers></app-servers>-->
+      <!--<app-my-another-comp [my-message]="'I am component 1'" (customEvent)="onCustomEvent($event)"></app-my-another-comp>
+      <app-my-another-comp [my-message]="'I am component 2'"></app-my-another-comp>
+      <app-my-another-comp 
+      [my-message]="'I am component 3'">
+      </app-my-another-comp>
+-->
+      <!--<app-my-another-comp *ngFor="let account of accounts; 
+      let i = index" [my-message]="account.name">
+        <!--[message-index]="i + 1"
+        <p class="text-right" #messageIdentifier><strong>{{i + 1}}</strong></p>
+        </app-my-another-comp>-->
+    </div>
+  </div>
+  <!--<div class="row">
+    <label>Enter a value-11: </label>
+    <input type="text" #input1 (blur)="inputDone(input1)">
+    <div *appNotIf="!dataOfInput">
+      <p>You entered: {{input1.value}}</p>
+      <p>You entered: {{dataOfInput}}</p>
+    </div>
+    <ng-template #alternateP>
+      <div>
+        <label>Please enter data for ngIf magic!</label>
+      </div>
+    </ng-template>
+    <ng-template [ngIf]="dataOfInput">
+      <div >
+      <p>You entered: {{input1.value}}</p>
+      <p>You entered: {{dataOfInput}}</p>
+    </div>
+    </ng-template>
+  </div>-->
+  <hr>
+  <div class="row">
+    <span class="badge">{{server.status}}</span>
+    <strong>{{server.name}}</strong> ## {{server.instanceType | uppercase}} ## {{server.startedOn | date:'medium'}}
+     ## {{server.cost | number:'.2-3' | currency:'EUR':true}}
+  </div>
+
+  <app-pipes-refresher-component></app-pipes-refresher-component>
+  <!-- <div class="row">
+    <label>Enter another value: </label>
+    <input type="text" #input2 (blur)="inputDone2(input2)">
+    <p>You entered: {{input2.value}}</p>
+    <p appEeevenBetterHighlighter [defaultColor]="'seagreen'" 
+    [highlightColor]="'cornflowerblue'">
+      You entered: {{dataOfInput2.nativeElement.value}}
+    </p>
+  </div>
+
+  <div [ngSwitch]="dataOfInput">
+
+    <p *ngSwitchCase="1">Current Value is in : Units</p>
+    <p *ngSwitchCase="10">Current Value is: Tens</p>
+    <p *ngSwitchCase="100">Current Value is: Hundreds</p>
+    <p *ngSwitchDefault>Current Value is: {{dataOfInput}}</p>
+  </div>-->
+
+
+
+  <!--<div class="row">
+    <div class="col-xs-6">
+      <div appDropdown class="btn-group" [ngClass]="{open: true}">
+        <button type="button" class="btn btn-primary">
+          What's Up<span class="caret"></span>
+          </button>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.google.co.in" target="_blank">
+          Doin Great</a></li>
+          <li><a href="http://www.medium.com" target="_blank">
+          Excellent Day</a></li>
+          <li><a href="https://angular.io/docs/" target="_blank">
+          Very Excited</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>-->
+  <!--<div class="row">
+    <h1>{{dataAsObservable | async}}</h1>
+  </div>
+  <div class="row">
+    <h1>{{observableData?.zip}}</h1>
+  </div>
+  <div class="row">
+    <h1>{{dataAsPromise}}</h1>
+  </div>
+  <td-form></td-form>-->
+  
+</div>
