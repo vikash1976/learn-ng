@@ -29,7 +29,7 @@ export class ServersComponent implements OnInit {
   constructor(private _serverDataService: ServerDataService) { }
 
   ngOnInit() {
-    this.gitDetails$ = this._serverDataService.getServerData();
+    this.gitDetails$ = this._serverDataService.getServerDataDummy();
     /*this.gitDetails$.subscribe(data => {
       this.gitDetails = data;
       console.log(data);

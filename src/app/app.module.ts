@@ -1,3 +1,5 @@
+import { HomeComponent } from './home/home.component';
+import { LoggingService } from './common-services/logging.service';
 import { FilterServersPipe } from './pipes/pipes-refresher-component/filter-servers.pipe';
 import { MultiplierPipe } from './pipes/pipes-refresher-component/multiplier.pipe';
 import { PipesRefresherComponentComponent } from './pipes/pipes-refresher-component/pipes-refresher-component.component';
@@ -13,7 +15,7 @@ import { ServerDataService } from './servers/server.data.service';
 import { GithubAuthInterceptor } from './servers/auth.interceptor';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Pipe } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 
@@ -21,7 +23,17 @@ import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 import { ServerComponent } from './server/server.component';
 import { MyAnotherCompComponent } from './my-another-comp/my-another-comp.component';
+import { ExploreDiComponent } from './explore-di/explore-di.component';
+import { RaComponent } from './forms/ra/ra.component';
+import { Routes, RouterModule } from '@angular/router';
 
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+ 
+  { path: 'td-form', component: TDFormComponent },
+  { path: 'ra-form', component: RaComponent },
+  { path: '**', redirectTo: '' }
+];
 
 
 @NgModule({
@@ -38,13 +50,18 @@ import { MyAnotherCompComponent } from './my-another-comp/my-another-comp.compon
     NotIfDirective,
     PipesRefresherComponentComponent,
     MultiplierPipe,
-    FilterServersPipe
+    FilterServersPipe,
+    ExploreDiComponent,
+    RaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    HttpModule
+    HttpModule,
+     RouterModule.forRoot(appRoutes)
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
@@ -52,7 +69,8 @@ import { MyAnotherCompComponent } from './my-another-comp/my-another-comp.compon
     multi: true
   },
     ServerDataService,
-    CommonService],
+    CommonService,
+    LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

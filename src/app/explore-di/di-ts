@@ -1,0 +1,174 @@
+class Car {
+  constructor() {
+    this.engine = new Engine();
+    this.tires = Tires.getInstance();
+    this.doors = app.get('doors');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Car {
+  constructor(engine, tires, doors) {
+    this.engine = engine;
+    this.tires = tires;
+    this.doors = doors;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var car = new Car(
+  new Engine(),
+  new Tires(),
+  new Doors()
+);
+
+var car = new Car(
+  new MockEngine(),
+  new MockTires(),
+  new MockDoors()
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function main() {
+  var engine = new Engine();
+  var tires = new Tires();
+  var doors = new Doors();
+  var car = new Car(engine, tires, doors);
+
+  car.drive();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Injector - The injector object that exposes APIs to us to create instances 
+of dependencies.
+var injector = ReflectiveInjector.resolveAndCreate([Engine]);
+var childInjector = injector.resolveAndCreateChild([Engine]);
+
+let injector = Injector.create([
+  { provide: Car, deps: [Engine, Tires, Doors] },
+  { provide: Engine, deps: [] },
+  { provide: Tires, deps: [] },
+  { provide: Doors, deps: [] }
+]);
+
+
+Provider - A provider is like a recipe that tells the injector how to create 
+an instance of a dependency. A provider takes a token and maps that to a 
+factory function that creates an object.
+
+
+
+@Component({
+  selector: 'video-player',
+  providers: [
+    PlayerService
+  ],
+  viewProviders: [
+    { provide: VideoService, useClass: SpecificVideoService, deps: [] }
+  ]
+})
+class VideoPlayer {
+  ...
+}
+
+
+@Component({ ... })
+class PlayButton {
+  constructor(@Host() playerService: PlayerService) {
+
+  }
+}
+
+
+Dependency - A dependency is the type of which an object should be created.
+*/

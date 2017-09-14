@@ -23,7 +23,9 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
       "scripts": [
-         "../node_modules/lodash/lodash.js"
+         "../node_modules/lodash/lodash.js",
+         "../node_modules/moment/min/moment.min.js",
+         "https://bootswatch.com/4-alpha/solar/bootstrap.min.css"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

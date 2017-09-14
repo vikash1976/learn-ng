@@ -1,11 +1,14 @@
+import { Http } from '@angular/http';
 
-import { OnInit } from '@angular/core';
-import { Observable, Observer } from 'rxjs';
+import { OnInit, Injectable } from '@angular/core';
+import { Observable, Observer, Subject } from 'rxjs';
 
-
+@Injectable()
 export class CommonService {
     //myCustomObservable: Observable<string>
     myCustomObservable: Observable<{name: string, zip: string}>
+
+    constructor(private _http: Http){}
 
     getDataAsObervable(): Observable<{name: string, zip: string}> {
         return Observable.create((observer: Observer<{name: string, zip: string}>) => {
@@ -24,9 +27,9 @@ export class CommonService {
                 observer.next({name: "DT", zip: "110011"});
                 //observer.next("Data from observable at 7000ms");
             }, 7000);
-            /*setTimeout(() => {
+            setTimeout(() => {
               observer.complete();
-            }, 8000)*/
+            }, 6000)
         }
 
         );
@@ -36,5 +39,9 @@ export class CommonService {
             setTimeout(() => resolve("Data One From Promise"), 5000),
         );
 
+    }
+
+    getEmployeeDataFromFakeJSON() {
+        return this._http.get('http://localhost:3000/employees').map((resp) => resp.json());
     }
 }

@@ -1,4 +1,23 @@
 <div class="container">
+   <div class="row">
+    
+      <ul class="nav nav-tabs">
+        <li role="presentation"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/">Home</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a routerLink="td-form">TD Form</a>
+        </li>
+        <li role="presentation"
+            routerLinkActive="active">
+          <a [routerLink]="['ra-form']">RA Form</a>
+        </li>
+      </ul>
+    
+   </div>
   <div class="row">
     <div class="col-md-12">
       <h1>
@@ -12,6 +31,14 @@
       [my-message]="'I am component 3'">
       </app-my-another-comp>
 -->
+<router-outlet></router-outlet>
+      <!--<app-explore-di></app-explore-di>-->
+      <!--<td-form></td-form>
+      <hr>
+      <h1>Reactive Form Below</h1>
+      <hr>
+      <app-ra></app-ra>-->
+      
       <!--<app-my-another-comp *ngFor="let account of accounts; 
       let i = index" [my-message]="account.name">
         <!--[message-index]="i + 1"
@@ -38,14 +65,14 @@
     </div>
     </ng-template>
   </div>-->
-  <hr>
-  <div class="row">
+  
+  <!--<div class="row">
     <span class="badge">{{server.status}}</span>
     <strong>{{server.name}}</strong> ## {{server.instanceType | uppercase}} ## {{server.startedOn | date:'medium'}}
      ## {{server.cost | number:'.2-3' | currency:'EUR':true}}
-  </div>
+  </div>-->
 
-  <app-pipes-refresher-component></app-pipes-refresher-component>
+  <!--<app-pipes-refresher-component></app-pipes-refresher-component>-->
   <!-- <div class="row">
     <label>Enter another value: </label>
     <input type="text" #input2 (blur)="inputDone2(input2)">
@@ -84,15 +111,20 @@
 
     </div>
   </div>-->
-  <!--<div class="row">
-    <h1>{{dataAsObservable | async}}</h1>
+  <!--<div class="row" *ngIf="dataAsObservable | async as mydata">
+    <h1>Data out of subscription from template code using async pipe</h1>
+    <h2>Name: {{mydata.name}}</h2>
+    <h2>Zip: {{mydata.zip}}</h2>
   </div>
+  <hr>
   <div class="row">
-    <h1>{{observableData?.zip}}</h1>
+    <h1>Data out of subscription from component code</h1>
+    <h2>Name: {{observableData?.name}}</h2>
+    <h2>Zip: {{observableData?.zip}}</h2>
   </div>
   <div class="row">
     <h1>{{dataAsPromise}}</h1>
-  </div>
-  <td-form></td-form>-->
-  
+  </div>-->
+  <!--<td-form></td-form>-->
+
 </div>
